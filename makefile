@@ -40,5 +40,5 @@ to-schema-options=--to plain -L to-schema.lua
 schema: 
 	$(pandoc) $(general_options) $(to-schema-options) -o $(schema-output) $(input-files)
 
-docs: 
+specs: 
 	$(pandoc) $(general_options) $(to-specs-options) -o $(specs-output) $(input-files)
