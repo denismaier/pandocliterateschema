@@ -9,7 +9,7 @@
 
 # Filename (without extension)
 
-input-files=csl.md
+input-files=csl-citation-bibliography.md csl-macro.md
 schema-output=schema.rnc
 specs-output=specification.md
 

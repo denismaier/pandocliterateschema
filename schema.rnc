@@ -1,0 +1,30 @@
+div { style.citation =
+
+    ## Use to describe the formatting of citations.
+    element cs:citation { citation.options, sort?, citation.layout }
+
+style.bibliography =
+
+    ## Use to describe the formatting of the bibliography.
+    element cs:bibliography {
+      bibliography.options, sort?, bibliography.layout
+    }
+
+citation.layout = element cs:layout { affixes, delimiter,
+font-formatting, rendering-element+ }
+
+bibliography.layout = element cs:layout { affixes, font-formatting,
+rendering-element+ } }
+
+div { style.macro =
+
+    ## Use to create collections of (reusable) formatting instructions.
+    element cs:macro {
+      attribute name { xsd:NMTOKEN },
+      rendering-element+
+    }
+
+rendering-element = rendering-element.names | rendering-element.date |
+rendering-element.label | rendering-element.text |
+rendering-element.title | rendering-element.number |
+rendering-element.choose | rendering-element.group }
